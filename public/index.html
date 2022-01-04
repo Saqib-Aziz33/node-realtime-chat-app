@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wassup</title>
+    <link rel="shortcut icon" href="./img//brand.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="chat-section">
+        <!-- brand logo -->
+        <div class="brand">
+            <img src="./img/brand.png" alt="wassup logo">
+            <h2>Wassup</h2>
+        </div>
+
+        <!-- incomming and outgoing msges -->
+        <div class="message-area">
+            <!-- dummy messages -->
+            <!-- <div class="incoming message">
+                <h4>saqib</h4>
+                <p>Lorem, ipsum.</p>
+            </div>
+            <div class="outgoing message">
+                <h4>saqib</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, ex.</p>
+            </div> -->
+        </div>
+
+        <!-- typing area  -->
+        <div>
+            <textarea id="message-box" cols="30" rows="1" placeholder="Write a message..."></textarea>
+        </div>
+
+    </section>
+    
+
+    <!-- audio notification element -->
+    <audio id="notification-sound" src="./sound/msg1.mp3"></audio>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="./client.js"></script>
+</html>
